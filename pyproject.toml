@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ma-craftax"
+version = "0.1.0"
+description = "Multi-agent Craftax environment"
+requires-python = ">=3.9"
+dependencies = [
+    # Core JAX stack — no pins to avoid conflicts with the installing project
+    "jax",
+    "jaxlib",
+    "flax",
+    "optax",
+    "distrax",
+    "chex",
+    "orbax-checkpoint",
+    # Not pinned in typical MARL stacks
+    "gymnax",
+    "numpy",
+]
+
+[project.optional-dependencies]
+viz = [
+    "pygame",
+    "matplotlib",
+    "imageio",
+    "seaborn",
+]
+dev = [
+    "black",
+    "pre-commit",
+    "wandb",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ma_craftax*"]

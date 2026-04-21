@@ -32,7 +32,7 @@ import wandb
 from jaxmarl.wrappers.baselines import LogWrapper
 from jaxmarl.wrappers.baselines import JaxMARLWrapper
 
-from craftax.craftax_env import make_craftax_env_from_name
+from ma_craftax.craftax_env import make_craftax_env_from_name
 
 
 # ===========================

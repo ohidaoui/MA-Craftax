@@ -29,7 +29,7 @@ from jaxmarl.wrappers.baselines import (
     LogWrapper,
     CTRolloutManager,
 )
-from craftax.craftax_env import make_craftax_env_from_name
+from ma_craftax.craftax_env import make_craftax_env_from_name
 
 # ===========================
 # Model Definitions
