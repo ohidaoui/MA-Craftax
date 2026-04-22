@@ -41,3 +41,6 @@ dev = [
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["ma_craftax*"]
+
+[tool.setuptools.package-data]
+"ma_craftax" = ["**/*.png", "**/*.jpg", "**/*.npy"]
